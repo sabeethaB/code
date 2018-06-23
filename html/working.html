@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<h1>Printing Value</h1>
+</head>
+<body>
+<p id="function"></p>
+<p id="function1"></p>
+<form name="form_one" action="#">
+    <input name="variable" type="text" /></br></br></br>
+    <input type="button" value="onclick" onclick="modal()" onkeyup="" style="margin-left: 50px;background-color:violet;color:black;" />
+</form>
+<script>
+function modal()
+{
+  var variable = document.form_one.variable.value;
+  document.getElementById("function").innerHTML =variable;
+}
+</script>
+</body>
+</html>
+
+
+

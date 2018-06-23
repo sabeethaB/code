@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="background-color: lightsteelblue;">
+<h1 style="">HOTEL MANAGEMENT</h1>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Please fill all the form fields");
+        return false;
+    }
+    var y = document.forms["myForm"]["fpwd"].value;
+    if (y == "") {
+        alert("Please fill all the form fields");
+        return false;
+    }
+    var z = document.forms["myForm"]["faddress"].value;
+    if (z == "") {
+        alert("Please fill all the form fields");
+        return false;
+    }
+    var q = document.forms["myForm"]["fcity"].value;
+    if (q == "") {
+        alert("Please fill all the form fields");
+        return false;
+    }
+}
+</script>
+<form name="myForm" action=" ">
+Name: <input type="text" name="fname" style="margin-left: 38px;"></br></br>
+Password: <input type="text" name="fpwd" style="margin-left: 14px;></br></br>
+Address: <input type="text" name="faddress"></br></br>
+City: <input type="text" name="fcity"></br></br>
+<input type="submit" value="Submit" onclick="validateForm()">
+</form>
+</body>
+</html>

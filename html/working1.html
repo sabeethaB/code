@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Icons color change</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script>
+function setColor(btn, color){
+    var count=1;
+    var property = document.getElementById(btn);
+    if (count == 0){
+        property.style.color= "blue";
+        count=1;        
+        
+    }
+    else{
+        property.style.color = "violet";
+        count=0;
+    }
+}
+</script>
+</head>
+<body>
+<i class="material-icons" style="font-size:60px;color:black;text-shadow:2px 2px 4px #000000;" onclick="setColor('button', '#101010')"; />comment</i>
+</body>
+</html>
+
