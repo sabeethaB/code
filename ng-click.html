@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<h1>Name without change: <span ng-bind="name1"></span><h1>
+<p ng-click="changename()">click the name:<span ng-bind="name"></p>
+</div>
+<script>
+var app= angular.module	('myApp',[]);
+app.controller('myCtrl',function($scope){
+	$scope.name1="sabeetha";
+	$scope.name="sabeetha";
+	$scope.changename=function()
+	{
+		$scope.name="balakrishnan";
+	}
+});
+</script>
+</body>
+</html>
